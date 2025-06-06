@@ -13,9 +13,7 @@ const DonationProgress = () => {
         <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-8 shadow-lg">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-600 mb-2">
-                {currentAmount.toLocaleString("ru-RU")} ₽
-              </div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">0</div>
               <div className="text-gray-600">собрано</div>
             </div>
             <div className="text-center">
