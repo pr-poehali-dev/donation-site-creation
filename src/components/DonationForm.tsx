@@ -47,7 +47,7 @@ const DonationForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  никнейм
+                  Ваш никнейм в Minecraft
                 </label>
                 <Input
                   type="text"

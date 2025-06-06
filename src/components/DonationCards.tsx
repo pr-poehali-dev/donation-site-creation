@@ -55,7 +55,9 @@ const DonationCards = () => {
               )}
 
               <CardContent className="p-6 text-center space-y-4">
-                <div className="text-2xl font-bold text-purple-600">179 ₽</div>
+                <div className="text-2xl font-bold text-purple-600">
+                  {tier.amount.toLocaleString("ru-RU")} ₽
+                </div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   {tier.title}
                 </h3>
