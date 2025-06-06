@@ -4,27 +4,27 @@ import { Button } from "@/components/ui/button";
 const DonationCards = () => {
   const donationTiers = [
     {
-      amount: 500,
-      title: "Спасибо",
-      description: "Благодарность в соцсетях",
+      amount: 300,
+      title: "Базовый",
+      description: "Скин для персонажа + благодарность",
       popular: false,
     },
     {
-      amount: 2000,
-      title: "Поддержка",
-      description: "Именная благодарность + стикерпак",
+      amount: 1000,
+      title: "VIP",
+      description: "Скин + эмоции + именной тег в игре",
       popular: true,
     },
     {
-      amount: 5000,
-      title: "Помощь",
-      description: "Всё выше + эксклюзивные материалы",
+      amount: 2500,
+      title: "Премиум",
+      description: "Всё выше + VIP ранг + особые привилегии",
       popular: false,
     },
     {
-      amount: 10000,
-      title: "Вклад",
-      description: "Всё выше + персональная встреча",
+      amount: 5000,
+      title: "Легенда",
+      description: "Максимальный набор + эксклюзивный контент",
       popular: false,
     },
   ];
@@ -33,7 +33,7 @@ const DonationCards = () => {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12 font-montserrat">
-          Выберите сумму поддержки
+          Выберите пакет поддержки
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -7,6 +7,8 @@ const DonationForm = () => {
   const [amount, setAmount] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [platform, setPlatform] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,10 +22,10 @@ const DonationForm = () => {
         <Card className="shadow-xl border-0 bg-gradient-to-br from-white to-purple-50">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-bold text-gray-900 font-montserrat">
-              Произвольная сумма
+              Поддержать egor202411
             </CardTitle>
             <p className="text-gray-600">
-              Введите любую сумму, которую готовы пожертвовать
+              Введите сумму доната и данные для получения игровых бонусов
             </p>
           </CardHeader>
 
@@ -45,6 +47,20 @@ const DonationForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Ваш никнейм в Minecraft
+                </label>
+                <Input
+                  type="text"
+                  value={nickname}
+                  onChange={(e) => setNickname(e.target.value)}
+                  placeholder="Введите ваш игровой никнейм"
+                  className="h-12"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
                   Имя
                 </label>
                 <Input
@@ -55,6 +71,23 @@ const DonationForm = () => {
                   className="h-12"
                   required
                 />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Платформа
+                </label>
+                <select
+                  value={platform}
+                  onChange={(e) => setPlatform(e.target.value)}
+                  className="w-full h-12 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required
+                >
+                  <option value="">Выберите платформу</option>
+                  <option value="java">Minecraft Java Edition</option>
+                  <option value="bedrock">Minecraft Bedrock</option>
+                  <option value="server">Сервер</option>
+                </select>
               </div>
 
               <div>

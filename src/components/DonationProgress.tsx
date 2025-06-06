@@ -1,11 +1,11 @@
 import { Progress } from "@/components/ui/progress";
 
 const DonationProgress = () => {
-  const targetAmount = 1000000;
-  const currentAmount = 347500;
+  const targetAmount = 50000;
+  const currentAmount = 12750;
   const progress = (currentAmount / targetAmount) * 100;
-  const daysLeft = 23;
-  const backers = 1247;
+  const daysLeft = 30;
+  const backers = 89;
 
   return (
     <section className="py-16 px-4 bg-white">
